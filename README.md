@@ -1,7 +1,7 @@
 # Wedlock API Documentation
 
 
-## User
+## Get Wedding Invitations
 
 -	GET Request
 	-	User/invitation
@@ -58,6 +58,7 @@
 	}
 
 	```
+## Update User Profile
 
 - Multipart POST Request
 	- User/update_user_profile
@@ -78,7 +79,7 @@
 	   }
 	}
 	```
-
+## Update IOS Device Token
 - GET Request
 	- User/save_ios_device_token
 - Parameters
@@ -96,7 +97,7 @@
 	   }
 	}
 	```
-## Guest
+## Get Full Wedding
 
 - GET Request
 	- Guest/wedding
@@ -743,6 +744,7 @@
 	   }
 	}
 	```
+## Register Guest On Bride Side
 - GET Request
 	- Guest/register_guest_on_bride_side
 - Parameters
@@ -762,6 +764,7 @@
 	   }
 	}
 	```
+## Register Guest On Groom Side
 - GET Request
 	- Guest/register_guest_on_groom_side
 - Parameters
@@ -781,6 +784,7 @@
 	   }
 	}
 	```
+## RSVP Into Programs
 - GET Request
 	- Guest/going_into_program
 - Parameters
@@ -802,6 +806,7 @@
 	   }
 	}
 	```
+## Get Program RSVP Status Count For Bride
 - GET Request
 	- Guest/get_rsvp_status_bride
 - Parameters
@@ -826,6 +831,7 @@
 	   }
 	}
 	```
+## Get Program RSVP Status Count For Groom
 - GET Request
 	- Guest/get_rsvp_status_groom
 - Parameters
@@ -850,6 +856,7 @@
 	   }
 	}
 	```
+## Get Program RSVP Members List For Bride
 - GET Request
 	- Guest/get_rsvp_members_bride
 - Parameters
@@ -905,6 +912,7 @@
 	   }
 	}
 	```
+## Get Program RSVP Members List For Groom
 - GET Request
 	- Guest/get_rsvp_members_groom
 - Parameters
