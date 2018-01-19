@@ -1,5 +1,7 @@
 # Wedlock API Documentation
+This Repository Lists all API methods with input parameters(required/optional) also shows Response Format.
 
+BASE-URL = "http://hostname/wedlock/index.php/api/"
 
 ## Get Wedding Invitations
 
