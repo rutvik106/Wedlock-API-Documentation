@@ -1,7 +1,19 @@
 # Wedlock API Documentation
 This Repository Lists all API methods with input parameters(required/optional) also shows Response Format.
 
-BASE-URL = "http://hostname/wedlock/index.php/api/"
+BASE-URL = "http://hostname/api/"
+
+## Constants
+-   Person Type
+    - 1=groom
+    - 2=bride
+    - 3=key person
+    - 4=guest
+
+- RSVP Status
+    - 0=pending
+    - 1=coming
+    - -1=not coming
 
 ## Get Wedding Invitations
 
@@ -970,3 +982,67 @@ BASE-URL = "http://hostname/wedlock/index.php/api/"
 	   }
 	}
 	```
+	
+	## Upload photos to Album
+- Multipart POST Request
+	- Album/upload_images
+- Parameters
+	- guest_id
+	- wedding_folder_name
+	- album_name
+	- album_id
+	- album_images[] (Max: 10 images)
+- Response
+	```
+	{  
+       "response":{  
+          "error":{  
+             "error_code":0,
+             "error_msg":"",
+             "msg":""
+          },
+          "uploaded_images":[  
+             {  
+                "id":"1",
+                "url":"http://wedlockclub.com/./uploads/files/1518500793/Pre Wedding/./uploads/files/1518500793/Pre Wedding/IMG-20180220-WA0004.jpg"
+             },
+             {  
+                "id":"1",
+                "url":"http://wedlockclub.com/./uploads/files/1518500793/Pre Wedding/./uploads/files/1518500793/Pre Wedding/IMG-20180220-WA0004.jpg"
+             },
+             {  
+                "id":"1",
+                "url":"http://wedlockclub.com/./uploads/files/1518500793/Pre Wedding/./uploads/files/1518500793/Pre Wedding/IMG-20180220-WA0004.jpg"
+             },
+             {  
+                "id":"1",
+                "url":"http://wedlockclub.com/./uploads/files/1518500793/Pre Wedding/./uploads/files/1518500793/Pre Wedding/IMG-20180220-WA0004.jpg"
+             }
+          ],
+          "failed_images":[  
+             "failed to upload",
+             "invalid file name"
+          ]
+       }
+    }
+	```
+	
+		## Delete photo from Album
+- POST Request
+	- Album/delete_photo
+- Parameters
+	- image_id
+	- guest_id
+- Response
+	```
+	{  
+	   "response":{  
+	      "error":{  
+	         "error_code":0,
+	         "error_msg":"",
+	         "msg":"image deleted successfully"
+	      }
+	   }
+	}
+	```
+	
