@@ -983,7 +983,7 @@ BASE-URL = "http://hostname/api/"
 	}
 	```
 	
-	## Upload photos to Album
+## Upload photos to Album
 - Multipart POST Request
 	- Album/upload_images
 - Parameters
@@ -1027,7 +1027,7 @@ BASE-URL = "http://hostname/api/"
     }
 	```
 	
-		## Delete photo from Album
+## Delete photo from Album
 - POST Request
 	- Album/delete_photo
 - Parameters
